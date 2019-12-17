@@ -1,0 +1,10 @@
+.idea
+node_modules
+.tmp
+package-lock.json
+yarn-error.log
+yarn.lock
+test.ts
+dist
+lib
+/composer.d.ts

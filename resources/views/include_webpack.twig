@@ -1,0 +1,32 @@
+
+{# @var \Pyro\Webpack\Webpack webpack #}
+
+
+{% if webpack.isEnabled() %}
+    {#
+        Add webpack compilation output scripts & styles
+        This will render the script/style tags for entries that have been enabled prior to this point
+
+        If the webpack-dev-server is active. Instead of local paths, we point them to the dev-server. This also enables HMR
+        This will automatically include ALL scripts & styles, but still depends on providers to get executed
+
+        The line WEBPACK_HERE_PLEASE will be replaced with all the dev-server script and styles. This is being done by the middleware
+        @todo Change so this does not use a middleware anymore. Preferably combining it with the render funcs
+    #}
+
+    <!-- WEBPACK ASSETS -->
+    {% if webpack.isActive() %}
+        {{ webpack.renderDevServerAssets|raw }}
+    {% else %}
+        {{ webpack.renderScripts|raw }}
+        {{ webpack.renderStyles|raw }}
+    {% endif %}
+
+    {# Render the service provider array to javascript. #}
+    <!-- WEBPACK PROVIDERS -->
+    {{ webpack.renderProviders | raw }}
+
+    <!-- WEBPACK ALIASES -->
+    {{ webpack.renderAliases | raw }}
+
+{% endif %}

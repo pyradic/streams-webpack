@@ -24,10 +24,10 @@ class WebpackServiceProvider extends ServiceProvider implements DeferrableProvid
      */
     public function register()
     {
-        $this->mergeConfigFrom(
-            config_path('webpack.php'),
-            'webpack'
-        );
+        // $this->mergeConfigFrom(
+        //     config_path('webpack.php'),
+        //     'webpack'
+        // );
 
         $this->registerWebpack();
     }

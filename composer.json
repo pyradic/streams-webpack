@@ -3,8 +3,7 @@
     "description": "Provides the tools and logic to build a modern and modular frontend application for the Streams Platform",
     "license": "MIT",
     "require": {
-        "laradic/support": "~2.0",
-        "ocramius/generated-hydrator": "~3.0"
+        "anomaly/streams-platform": "^2.0"
     },
     "autoload": {
         "psr-4": {

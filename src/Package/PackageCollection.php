@@ -1,6 +1,6 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack\Package;
+namespace Anomaly\Streams\Webpack\Package;
 
 use Illuminate\Support\Collection;
 

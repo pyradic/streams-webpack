@@ -1,14 +1,14 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack;
+namespace Anomaly\Streams\Webpack;
 
 use GeneratedHydrator\Configuration;
 use Illuminate\Contracts\Foundation\Application;
 use Laradic\Support\Dot;
-use Anomaly\Streams\Platform\Webpack\Package\Entry;
-use Anomaly\Streams\Platform\Webpack\Package\EntryCollection;
-use Anomaly\Streams\Platform\Webpack\Package\Package;
-use Anomaly\Streams\Platform\Webpack\Package\PackageCollection;
+use Anomaly\Streams\Webpack\Package\Entry;
+use Anomaly\Streams\Webpack\Package\EntryCollection;
+use Anomaly\Streams\Webpack\Package\Package;
+use Anomaly\Streams\Webpack\Package\PackageCollection;
 
 class WebpackFactory
 {

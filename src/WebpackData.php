@@ -1,6 +1,6 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack;
+namespace Anomaly\Streams\Webpack;
 
 use Laradic\Support\Dot;
 

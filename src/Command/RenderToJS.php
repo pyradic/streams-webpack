@@ -1,12 +1,12 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack\Command;
+namespace Anomaly\Streams\Webpack\Command;
 
 use Collective\Html\HtmlBuilder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Laradic\Support\Dot;
-use Anomaly\Streams\Platform\Webpack\Webpack;
+use Anomaly\Streams\Webpack\Webpack;
 
 class RenderToJS
 {

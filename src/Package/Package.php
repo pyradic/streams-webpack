@@ -1,6 +1,6 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack\Package;
+namespace Anomaly\Streams\Webpack\Package;
 
 use Anomaly\Streams\Platform\Addon\Addon;
 use Laradic\Support\Traits\ArrayAccessibleProperties;

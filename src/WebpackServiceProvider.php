@@ -1,13 +1,13 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack;
+namespace Anomaly\Streams\Webpack;
 
 use Anomaly\Streams\Platform\Http\Middleware\ApplicationReady;
 use Anomaly\Streams\Platform\View\Event\TemplateDataIsLoading;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Factory;
-use Anomaly\Streams\Platform\Webpack\Command\ResolvePackageAddons;
+use Anomaly\Streams\Webpack\Command\ResolvePackageAddons;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 /**

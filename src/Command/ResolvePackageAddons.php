@@ -1,9 +1,9 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack\Command;
+namespace Anomaly\Streams\Webpack\Command;
 
 use Anomaly\Streams\Platform\Addon\AddonCollection;
-use Anomaly\Streams\Platform\Webpack\Webpack;
+use Anomaly\Streams\Webpack\Webpack;
 
 class ResolvePackageAddons
 {

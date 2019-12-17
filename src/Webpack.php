@@ -1,11 +1,11 @@
 <?php
 
-namespace Anomaly\Streams\Platform\Webpack;
+namespace Anomaly\Streams\Webpack;
 
 use Collective\Html\HtmlBuilder;
 use InvalidArgumentException;
-use Anomaly\Streams\Platform\Webpack\Package\Entry;
-use Anomaly\Streams\Platform\Webpack\Package\EntryCollection;
+use Anomaly\Streams\Webpack\Package\Entry;
+use Anomaly\Streams\Webpack\Package\EntryCollection;
 
 class Webpack
 {

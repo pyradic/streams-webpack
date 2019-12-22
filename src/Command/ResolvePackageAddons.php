@@ -11,8 +11,8 @@ class ResolvePackageAddons
     {
         $packages = $webpack->getPackages();
         /** @var \Anomaly\Streams\Platform\Addon\Addon $addon */
-        foreach ($addons->enabled() as $addon) {
-            $composerName = data_get($addon->getComposerJson(), 'name');
+        foreach ($addons as $addon) {
+            $composerName = data_get($addon, 'name');
             if (!$composerName) {
                 continue;
             }

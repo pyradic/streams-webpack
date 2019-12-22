@@ -2,6 +2,7 @@
 
 namespace Anomaly\Streams\Webpack;
 
+use Anomaly\Streams\Platform\Application\Event\ApplicationHasLoaded;
 use Anomaly\Streams\Platform\Http\Middleware\ApplicationReady;
 use Anomaly\Streams\Platform\View\Event\TemplateDataIsLoading;
 use Illuminate\Contracts\Foundation\Application;
@@ -28,6 +29,7 @@ class WebpackServiceProvider extends ServiceProvider implements DeferrableProvid
         //     config_path('webpack.php'),
         //     'webpack'
         // );
+        $this->mergeConfigFrom(dirname(__DIR__) . '/resources/config/webpack.php', 'webpack');
 
         $this->registerWebpack();
     }
@@ -45,7 +47,7 @@ class WebpackServiceProvider extends ServiceProvider implements DeferrableProvid
 
         $this->app->alias('webpack', Webpack::class);
 
-        $this->app->events->listen(ApplicationReady::class, function () {
+        $this->app->events->listen(ApplicationHasLoaded::class, function () {
             dispatch_now(new ResolvePackageAddons());
         });
 
@@ -82,7 +84,7 @@ class WebpackServiceProvider extends ServiceProvider implements DeferrableProvid
 
     /**
      * Return the provided services.
-     * 
+     *
      * @return array
      */
     public function provides()

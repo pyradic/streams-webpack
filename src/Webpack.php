@@ -28,13 +28,13 @@ class Webpack
     protected $outputPath;
     //@formatter:on
 
-    /** @var array|\Pyro\Webpack\WebpackData = \Pyro\Webpack\WebpackDataExample::data() */
+    /** @var array|\Anomaly\Streams\Webpack\WebpackData = \Anomaly\Streams\Webpack\WebpackDataExample::data() */
     protected $data;
 
-    /** @var \Pyro\Webpack\Package\Package[]|\Pyro\Webpack\Package\PackageCollection */
+    /** @var \Anomaly\Streams\Webpack\Package\Package[]|\Anomaly\Streams\Webpack\Package\PackageCollection */
     protected $packages;
 
-    /** @var \Pyro\Webpack\Package\EntryCollection|\Pyro\Webpack\Package\Entry[] */
+    /** @var \Anomaly\Streams\Webpack\Package\EntryCollection|\Anomaly\Streams\Webpack\Package\Entry[] */
     protected $enabledEntries;
 
     /** @var \Collective\Html\HtmlBuilder */

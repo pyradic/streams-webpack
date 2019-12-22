@@ -24,7 +24,7 @@ class RenderJSON
     protected $value;
 
     /**
-     * @var \Pyro\Webpack\Webpack
+     * @var \Anomaly\Streams\Webpack\Webpack
      */
     protected $webpack;
 

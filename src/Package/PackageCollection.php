@@ -10,7 +10,7 @@ class PackageCollection extends Collection
     protected $items = [];
 
     /**
-     * @param \Pyro\Webpack\Package\Package $package
+     * @param \Anomaly\Streams\Webpack\Package\Package $package
      *
      * @return $this|\Illuminate\Support\Collection
      */
@@ -51,7 +51,7 @@ class PackageCollection extends Collection
         return $this->filter->hasAddon();
     }
 
-    /** @return \Pyro\Webpack\Package\Package */
+    /** @return \Anomaly\Streams\Webpack\Package\Package */
     public function findByComposerName($name)
     {
         if ($name) {

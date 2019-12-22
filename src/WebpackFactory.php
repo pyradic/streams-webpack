@@ -15,13 +15,13 @@ class WebpackFactory
     /** @var Hydrator[] */
     protected $hydrators;
 
-    /** @var array|\Pyro\Webpack\WebpackData = \Pyro\Webpack\WebpackDataExample::data() */
+    /** @var array|\Anomaly\Streams\Webpack\WebpackData = \Anomaly\Streams\Webpack\WebpackDataExample::data() */
     private $data;
 
     /** @var \Illuminate\Contracts\Foundation\Application */
     private $app;
 
-    /** @var \Pyro\Webpack\Webpack */
+    /** @var \Anomaly\Streams\Webpack\Webpack */
     private $webpack;
 
     /** @var PackageCollection */
@@ -94,9 +94,9 @@ class WebpackFactory
     }
 
     /**
-     * @param array|Dot $data = \Pyro\Webpack\WebpackDataExample::addonDot()
+     * @param array|Dot $data = \Anomaly\Streams\Webpack\WebpackDataExample::addonDot()
      *
-     * @return \Pyro\Webpack\Package\Package
+     * @return \Anomaly\Streams\Webpack\Package\Package
      */
     protected function buildPackage($data)
     {
@@ -112,9 +112,9 @@ class WebpackFactory
 
     /**
      * @param string    $name
-     * @param array|Dot $data = \Pyro\Webpack\WebpackDataExample::entry()
+     * @param array|Dot $data = \Anomaly\Streams\Webpack\WebpackDataExample::entry()
      *
-     * @return \Pyro\Webpack\Package\Entry
+     * @return \Anomaly\Streams\Webpack\Package\Entry
      */
     protected function buildEntry(Package $package, $data)
     {
@@ -127,7 +127,7 @@ class WebpackFactory
     }
 
     /**
-     * @param \Pyro\Webpack\WebpackData|array $addon = \Pyro\Webpack\WebpackDataExample::addonDot()
+     * @param \Anomaly\Streams\Webpack\WebpackData|array $addon = \Anomaly\Streams\Webpack\WebpackDataExample::addonDot()
      */
     protected function buildAddon($addon)
     { }

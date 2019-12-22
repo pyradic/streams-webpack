@@ -10,9 +10,9 @@ class Package implements \ArrayAccess
     use ArrayAccessibleProperties;
 
     //@formatter:off
-    /** @var \Pyro\Webpack\Webpack */
+    /** @var \Anomaly\Streams\Webpack\Webpack */
     protected $webpack;
-    /** @var \Pyro\Webpack\Package\EntryCollection|\Pyro\Webpack\Package\Entry[] */
+    /** @var \Anomaly\Streams\Webpack\Package\EntryCollection|\Anomaly\Streams\Webpack\Package\Entry[] */
     protected $entries;
     /** @var \Anomaly\Streams\Platform\Addon\Addon */
     protected $addon;
@@ -45,10 +45,10 @@ class Package implements \ArrayAccess
     /**
      * Package constructor.
      *
-     * @param \Pyro\Webpack\Webpack           $webpack
+     * @param \Anomaly\Streams\Webpack\Webpack           $webpack
      * @param array|\Laradic\Support\Dot $data
      */
-    public function __construct(\Pyro\Webpack\Webpack $webpack)
+    public function __construct(\Anomaly\Streams\Webpack\Webpack $webpack)
     {
         $this->webpack = $webpack;
     }

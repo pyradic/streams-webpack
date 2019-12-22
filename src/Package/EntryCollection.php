@@ -11,7 +11,7 @@ class EntryCollection extends \Illuminate\Support\Collection
     protected $items = [];
 
     /**
-     * @param \Pyro\Webpack\Package\Entry $entry
+     * @param \Anomaly\Streams\Webpack\Package\Entry $entry
      *
      * @return $this
      */
